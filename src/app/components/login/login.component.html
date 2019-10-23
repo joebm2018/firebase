@@ -1,0 +1,36 @@
+<main class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Iniciar Sesion</h4>
+                </div>
+                <div class="card-body">
+                    <form #formRegistro="ngForm" (ngSubmit)=onSubmit()>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" 
+                                placeholder="ingrese su email" 
+                                class="form-control"
+                                [(ngModel)]="objUsuario.email"
+                                name="email">
+                        </div>        
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" 
+                                 placeholder="ingrese su Password" 
+                                 class="form-control"
+                                 [(ngModel)]="objUsuario.pass1"
+                                name="pass1">
+                        </div>
+                           
+                        <div class="form-group">
+                            <button class="btn btn-primary"
+                            type="submit">Inicicar Sesion</button>
+                        </div>      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
